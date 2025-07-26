@@ -11,10 +11,21 @@ header {
     padding: 20px;
 }
 
-.profile-image {
-    width: 350px;
-    height: auto;
+.prof {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10%;
     justify-content: center;
+    align-items: center;
+    transform: translateX(-200px);
+    opacity: 0;
+    animation: slideIn 5s ease forwards;
+}
+
+.profile-image {
+    width: 300px;
+    max-width: 100%;
+    height: auto;
     object-fit: cover;
 }
 
@@ -31,35 +42,53 @@ h2 {
     color: #333;
 }
 
-span{color: gray;}
-
-.prof{display: flex;
-    flex-wrap: wrap;
-    gap: 10%;
-    justify-content: center;
-    align-items: center;
-    transform: translateX(-200px);
-    opacity: 0;
-    animation: slideIn 5s ease forwards;}
-
-
-.edu{display: flex;
-     gap:25%;}
-
-.info{display: flex;
-      gap:55%;}
-
-
-@keyframes slideIn {
-  to {
-    transform: translateX(0);
-    opacity: 1;
-  }
+span {
+    color: gray;
 }
 
-.ci{height: auto;
+.edu, .info {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.school, .ci {
     width: 200px;
+    max-width: 150%;
+    height: auto;
     margin-top: 0;
+}
+
+@keyframes slideIn {
+    to {
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+
+a {
+    color: blue;
+}
+
+@media (max-width: 768px) {
+    .prof, .info, .edu {
+        flex-direction: column;
+        text-align: center;
     }
 
-a{color: blue;}
+    .contact-info, .education, .projects {
+        margin: 20px;
+        padding-left: 30px;
+    }
+
+    .profile-image {
+        width: 80%;
+    }
+
+    .ci, .school {
+        width: 120px;
+        margin-top: 20px;
+    }
+}
