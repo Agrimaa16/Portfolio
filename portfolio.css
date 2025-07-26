@@ -47,7 +47,7 @@ span{color: gray;}
      gap:30%}
 
 .info{display: flex;
-        gap: 60%;}
+        gap: 40%;}
 
 
 @keyframes slideIn {
@@ -61,7 +61,6 @@ span{color: gray;}
     border-radius: 50%;
     width: 170px;
     margin-top: 30px;
-    justify-content: right;
     }
 
 a{color: blue;}
