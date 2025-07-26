@@ -14,7 +14,7 @@ header {
 .profile-image {
     width: 350px;
     height: auto;
-    margin-left: 25%;
+    justify-content: center;
     object-fit: cover;
 }
 
@@ -36,6 +36,7 @@ span{color: gray;}
 .prof{display: flex;
     flex-wrap: wrap;
     gap: 10%;
+    justify-content: center;
     align-items: center;
     transform: translateX(-200px);
     opacity: 0;
@@ -58,6 +59,8 @@ span{color: gray;}
 
 .ci{height: 150px;
     border-radius: 50%;
-    width: 170px;}
+    width: 170px;
+    margin-top: 30px;
+    }
 
 a{color: blue;}
