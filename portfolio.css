@@ -1,0 +1,65 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+header {
+    background: #333;
+    color: #fff;
+    padding: 20px;
+}
+
+.profile-image {
+    width: 350px;
+    height: auto;
+    justify-content: center;
+    object-fit: cover;
+}
+
+.contact-info, .projects, .education {
+    margin: 50px;
+    padding: 20px;
+    padding-left: 100px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    color: #333;
+}
+
+span{color: gray;}
+
+.prof{display: flex;
+    flex-wrap: wrap;
+    gap: 10%;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(-200px);
+    opacity: 0;
+    animation: slideIn 5s ease forwards;}
+
+
+.edu{display: flex;
+     gap:30%;}
+
+.info{display: flex;
+      gap: 60%;}
+
+
+@keyframes slideIn {
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.ci{height: 200px;
+    width: auto;
+    margin-top: 20px;
+    }
+
+a{color: blue;}
