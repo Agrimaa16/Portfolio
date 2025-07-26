@@ -47,7 +47,7 @@ span{color: gray;}
      gap:30%;}
 
 .info{display: flex;
-      gap: 60%;}
+      gap:60%;}
 
 
 @keyframes slideIn {
@@ -57,9 +57,8 @@ span{color: gray;}
   }
 }
 
-.ci{height: 200px;
-    width: auto;
-    margin-top: 20px;
+.ci{height: auto;
+    width: 200px;
     }
 
 a{color: blue;}
